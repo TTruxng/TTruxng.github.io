@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/logo/logo.png">
+    <title>Tina Truong | Home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  
+  <!-- HEADER SECTION START -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html"><img src="/images/logo/logo.png" width="40px" alt="Logo">Tina Truong</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i id="bar" class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/views/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/contact.html">Contact</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER SECTION END -->
+
+  <!-- HOME SECTION START -->
+  <section id="home">
+    <div class="home container">
+      <h5>TINA TRUONG</h5>
+      <div class="masking-container">
+        <h1 class="cursor typewriter-animation">I'm a <span class="masked-text">Multimedia Artist</span> !</h1>
+      </div>
+      <br>
+      <p>Throughout my academic career, I have had the opportunity to work on many forms of media, ranging from traditional to digital mediums.<br><br>    
+        As a multimedia artist, my goal is to not only incorporate and support the aesthetics of an idea, but to also ensure that the idea can be effectively communicated to, and understood, by the intended audience.</p>
+        <div>  
+          <a href="/docs/Tina_Truong_Resume.pdf" download="">
+              <button class="btn btn-secondary">DOWNLOAD RESUME</button>
+          </a>
+      </div>
+    </div>
+  </section>
+  <!-- HOME SECTION END -->
+
+  <!-- SKILLS SECTION START -->
+  <section id="skills" class="container">
+    <div class="row m-0 py-5">
+      <img class="img-fluid col-lg-3 col-md-2 col-6 py-3" src="/images/logo/html5Logo.png" alt="html5 Logo">
+      <img class="img-fluid col-lg-3 col-md-2 col-6 py-3" src="/images/logo/cssLogo.png" alt="css Logo">
+      <img class="img-fluid col-lg-3 col-md-2 col-6 py-3" src="/images/logo/adobeLogo.png" alt="Adobe Logo">
+      <img class="img-fluid col-lg-3 col-md-2 col-6 py-3" src="/images/logo/autodeskLogo.png" alt="Autodesk Logo">
+    </div>
+  </section>
+  <!-- SKILLS SECTION END -->
+
+  <!-- BANNER START -->
+  <section id="banner" class="my-5 py-5">
+    <div class="container">
+      <h1>Projects</h1>
+    </div>
+  </section>
+  <!-- BANNER END -->
+
+  <!-- PROJECTS SECTION START -->
+    <!-- PROJECTS.VIDEOS START -->   
+    <section id="projects" class="my-5 pb-5">
+      <div id="videos"> 
+        <div>
+          <video id="vid01" controls autoplay muted loop> 
+              <source type="video/mp4" src="videos/CPI321_FinalProject.mp4" /> 
+          </video>
+        </div>
+        <div>
+          <video id="vid02" controls autoplay muted loop> 
+              <source type="video/mp4" src="videos/CPI421_FinalProject.mp4" /> 
+          </video>
+        </div>
+        <div class="clear"></div> 
+      </div>
+    <!-- PROJECTS.VIDEOS END -->   
+
+    <!-- PROJECTS.3DMODELS START --> 
+    <div class="models container text-center mt-3 py-5">
+      <h3>3D Models</h3>
+    </div>
+      <div class="img-container">
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <p id="caption" class="caption"></p>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="image-row">
+            <img src="/images/model3D/Sword.jpg" class="modal-image" alt="This Sword was modeled, textured, and rendered in 3ds Max for a dungeon crawler game, intended for use by a warrior-like character.">
+            <img src="/images/model3D/bow.png" class="modal-image" alt="This Bow was modeled, textured, and rendered in 3ds Max for a game concept I had that revolves around a desert-themed game, but later used in a dungeon crawler game.">
+            <img src="/images/model3D/dagger.jpg" class="modal-image" alt="This Dagger was modeled, textured, and rendered in 3ds Max for a dungeon crawler game, intended for use by a rogue-like character.">
+        </div>
+      </div>
+    <!-- PROJECTS.3DMODELS END --> 
+
+    <!-- PROJECTS.GAMES START --> 
+    <div class="container text-center mt-3 py-5">
+      <h3>Games</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="container">
+          <div class="game row">
+            <div class="col-sm">
+              <a href="/aboutGame/sweetNothings.html"><img src="/images/games/GameSweetNothings.png" class="card-img-top mb-5"></a>
+                <h4 class="card-text">Sweet Nothings</h4>
+                <h5 class="card-title mb-3">A sweet and romantic adventure awaits you when you come across an abandoned copy of an old visual novel from the 2000's. Surely nothing bad will happen, right?
+                </h5>
+                <a href="https://turtle-squad.itch.io/sweet-nothings" class="btn btn-game" target="_blank">Play Sweet Nothings</a>
+            </div>
+            <div class="col-sm">
+              <a href="/aboutGame/runawayRiver.html"><img src="/images/games/GameRunawayRiver.png" class="card-img-top mb-5"></a> 
+                <h4 class="card-text">Runaway River</h4>
+                <h5 class="card-title mb-3">Runaway River is a single player, 3D, arcade-style infinite runner where the player must navigate their way through treacherous terrain tethered to a rampaging giant fish by a fishing line!
+                </h5>
+                <a href="https://ttruxng.itch.io/runaway-river" class="btn btn-game" target="_blank">Play RUNAWAY RIVER</a>
+            </div>
+            <div class="col-sm">
+              <a href="/aboutGame/uberBeats.html"><img src="/images/games/GameUberBeats.png" class="card-img-top mb-5"></a>
+                <h4 class="card-text">Ubér Beats</h4>
+                <h5 class="card-title mb-3">Pick up your phone to accept your next ride, with the goal being to get your customers to their destination in the allotted time and catering to their specific music taste!
+                </h5>
+                <a href="https://ttruxng.itch.io/uber-beats" class="btn btn-game" target="_blank">Play UBÉR BEATS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PROJECTS.GAMES END -->
+    <!-- PROJECTS.GD START -->  
+    <div class="container text-center mt-3 py-5">
+      <h3>Graphic Design</h3>
+    </div>
+    <div class="graphDes container">
+      <div class="row">
+        <div class="col-sm">
+          <object data="/graphicDesign/ProcessBinder21.pdf" type="application/pdf" width="100%" height="500px">
+            <iframe src="/graphicDesign/ProcessBinder21.pdf" width="100%" height="100%" style="border: none;"></iframe>
+            <p><a href="/graphicDesign/ProcessBinder21.pdf">click here to download the PDF file.</a></p>
+           </object>
+        </div>
+        <div class="expDesc01 col-sm">
+          <h4>Process Binders</h4>
+          <p>My time at Arizona State University enabled me to work on a variety of projects simultaneously and in a timely manner. The work I was tasked with challenged me to see things in ways that would require me to hone in on my attention to detail, and recognize that there are many factors that go into a  balanced design, from color theory to topography. Trial and error became a routine that pushed for both my peers and I to grow as future designers in a fast-paced environment.</p>
+        </div>
+        <div class="col-sm">
+          <object data="/graphicDesign/ProcessBinder22.pdf" type="application/pdf" width="100%" height="500px">
+            <iframe src="/graphicDesign/ProcessBinder22.pdf" width="100%" height="100%" style="border: none;"></iframe>
+            <p><a href="/graphicDesign/ProcessBinder22.pdf">click here to download the PDF file.</a></p>
+           </object>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm">
+          <object data="/graphicDesign/APA200MagazineProject.pdf" type="application/pdf" width="100%" height="500px">
+            <iframe src="/graphicDesign/APA200MagazineProject.pdf" width="100%" height="100%" style="border: none;"></iframe>
+            <p><a href="/graphicDesign/APA200MagazineProject.pdf">click here to download the PDF file.</a></p>
+           </object>
+        </div>
+        <div class="expDesc02 col-sm">
+          <h4>Magazines</h4>
+          <p>While I worked on most projects independently throughout my academic career, collaborative work was also to be expected in a setting that often requires an exchange of knowledge and distribution of work. Some of these works included designing the layouts and managing the  content that goes into the magazines. This means that while the overall look and feel of a work is crucial from a design perspective, it is important to design from the mind of the audience consuming the product, as well.</p>
+        </div>
+        <div class="col-sm">
+          <object data="/graphicDesign/GlobalFemTheory.pdf" type="application/pdf" width="100%" height="500px">
+            <iframe src="/graphicDesign/GlobalFemTheory.pdf" width="100%" height="100%" style="border: none;"></iframe>
+            <p><a href="/graphicDesign/GlobalFemTheory.pdf">click here to download the PDF file.</a></p>
+           </object>
+        </div>
+      </div>
+    </div>
+    <!-- PROJECTS.GD END -->  
+    </section>
+  <!-- PROJECTS SECTION END -->
+ 
+  <!-- FOOTER START -->
+  <footer id="footer" class="container-fluid mt-3 py-3">
+    <div class="copyright">
+      <p><small>© 2025 Tina Truong</small></p>
+      <div id="links">
+        <a href="mailto:ttruong2020@gmail.com"><img src="/images/logo/email-square-icon.png">
+        <a href="https://www.linkedin.com/in/tina-truong2020/"><img src="/images/logo/linkedin-square-icon.png">
+        <a href="https://www.instagram.com/art.txna/"><img src="/images/logo/black-instagram-icon.png">
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="/js/modal.js"></script>
+
+</body>
+</html>
