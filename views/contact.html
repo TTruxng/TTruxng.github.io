@@ -47,39 +47,35 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-body text-center">Contact Me</h2>
-
-                <form action="https://api.web3forms.com/submit" method="POST">
-                  <!-- Replace with your Access Key -->
-                  <input type="hidden" name="access_key" value="083e291d-52d5-41a1-ac36-0dce32eb1caf">
-              
-                  <!-- Form Inputs. Each input must have a name="" attribute -->
-                  <div class="form-outline my-5">
-                    <input type="name" name="name" placeholder="Name" class="form-control form-control-lg" required/>
-                  </div>
-                  <div class="form-outline my-5">
-                    <input 
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number" name="phone" placeholder="Phone" minlength="10" maxlength="10" class="form-control form-control-lg" required>
-                  </div>
-                  <div class="form-outline my-5">
-                    <input type="email" name="email" placeholder="Email" class="form-control form-control-lg" required/>
-                  </div>
-                  <div class="form-outline my-5">
-                    <input type="name" name="subj" placeholder="Subject" class="form-control form-control-lg" required/>
-                  </div>
-                  <div class="form-outline my-5">
-                    <textarea id="text" name="text" placeholder="Message" rows="3" class="form-control" required></textarea>
-                  </div> 
-                  <div class="button">
-                    <button type="submit" class="btn">Submit</button>
-                  </div>
-              
-                  <!-- Honeypot Spam Protection -->
-                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-              
-                  <!-- Custom Confirmation / Success Page -->
-                  <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->              
-              </form>
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="083e291d-52d5-41a1-ac36-0dce32eb1caf">
+                
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <div class="form-outline my-5">
+                      <input type="name" name="name" placeholder="Name" class="form-control form-control-lg" required/>
+                    </div>
+                    <div class="form-outline my-5">
+                      <input 
+                      oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      type="number" name="phone" placeholder="Phone" minlength="10" maxlength="10" class="form-control form-control-lg" required>
+                    </div>
+                    <div class="form-outline my-5">
+                      <input type="email" name="email" placeholder="Email" class="form-control form-control-lg" required/>
+                    </div>
+                    <div class="form-outline my-5">
+                      <input type="name" name="subj" placeholder="Subject" class="form-control form-control-lg" required/>
+                    </div>
+                    <div class="form-outline my-5">
+                      <textarea id="text" name="text" placeholder="Message" rows="3" class="form-control" required></textarea>
+                    </div> 
+                    <div class="button">
+                      <button type="submit" class="btn">Submit</button>
+                    </div>
+                
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                  </form>
               </div>
             </div>
           </div>
