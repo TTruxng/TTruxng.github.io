@@ -88,7 +88,7 @@ button:hover {
 }
 
 .navbar-brand img{
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -177,12 +177,12 @@ button:hover {
     font-weight: bold;
     color: transparent;
     background-image: url(/images/background/05.png); 
-    background-size: 200%;
+    background-size: 150%;
     background-position: 0 50%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animate-background 5s infinite alternate linear;
+    animation: animate-background 10s infinite alternate linear;
 }
 @keyframes animate-background {
     0% {
@@ -258,8 +258,6 @@ button:hover {
     }
 }
 
-
-
 .home h1 {
     color: #241e46;
     text-shadow: 1px 1px 3px #00000047;
@@ -305,18 +303,18 @@ button:hover {
     color: #241e46;
 }
 .btn-secondary:hover {
-    background: #aca5dc;
+    background: #aca5dc75;
     color: white;
 }
 
 #banner {
     background-image: url("/images/background/04.png");
     width: 100%;
-    height: 30vh;
+    height: 15vh;
     background-size: cover;
     background-position: top 70px center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,12 +354,14 @@ button:hover {
     height: 300px; 
     float: left; 
     margin-right: 5%;
+    border-radius: 15px;
 } 
 
 #vid02 { 
     width: 47.5%; 
     height: 300px; 
     float: left;
+    border-radius: 15px;
 }
 
 .clear{
@@ -378,8 +378,7 @@ button:hover {
         height: auto;
         float: none;
         margin: auto;
-        justify-content: left;
-        
+        justify-content: left;        
     }
     #vid02 {
         width: 44%;
@@ -423,7 +422,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 .image-row img {
@@ -524,6 +523,7 @@ button:hover {
         background-color: #6a6396;
     }
 }
+
 /*----------------Projects.GAMES Properties----------------*/
 .game h5 {
     color: #36291d;
@@ -587,12 +587,56 @@ button:hover {
     border-radius: 1rem;
 }
 
+.gallery {
+  --s: 180px; /* control the size */
+  --g: 5px;  /* control the gap */
+  --f: 1;   /* control the scale factor */
+  
+  display: grid;
+  margin: auto;
+  place-items: center;
+  gap: var(--g);
+  width: calc(7*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3,auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
 @media (max-width: 620px) {
     .expDesc01 {
         margin: 3rem 0 8rem 0;
     }
     .expDesc02 {
         margin: 3rem 0 9rem 0;
+    }
+    
+    .gallery {
+        --s: 100px; /* control the size */
+        --g: 20px;  /* control the gap */
+        --f: 0.5;   /* control the scale factor */
+        
+        display: grid;
+        margin: auto;
+        place-items: center;
+        gap: var(--g);
+        width: calc(5*var(--s) + 2*var(--g));
+        aspect-ratio: 1;
+        grid-template-columns: repeat(3,auto);
     }
 }
 
